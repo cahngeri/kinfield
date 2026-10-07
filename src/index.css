@@ -1,0 +1,188 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,300;1,9..40,400&family=DM+Serif+Display:ital@0;1&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* Pure white background */
+    --background: 0 0% 100%;
+    /* Deep Navy #09203F */
+    --foreground: 213 75% 14%;
+
+    /* Light Accent #F8FCFF */
+    --card: 210 100% 98%;
+    --card-foreground: 213 75% 14%;
+
+    --popover: 210 100% 98%;
+    --popover-foreground: 213 75% 14%;
+
+    /* Primary Blue #4C8FE1 */
+    --primary: 214 70% 59%;
+    --primary-foreground: 0 0% 100%;
+
+    /* Light Accent #F8FCFF */
+    --secondary: 210 100% 98%;
+    --secondary-foreground: 213 75% 14%;
+
+    /* Soft Teal #82ECD6 */
+    --muted: 166 72% 72%;
+    --muted-foreground: 213 35% 32%;
+
+    /* Soft Teal lighter */
+    --accent: 166 72% 72%;
+    --accent-foreground: 213 75% 14%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 210 20% 90%;
+    --input: 210 20% 90%;
+    --ring: 214 70% 59%;
+
+    --radius: 0.75rem;
+
+    --sidebar-background: 210 100% 98%;
+    --sidebar-foreground: 213 75% 14%;
+    --sidebar-primary: 214 70% 59%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 166 72% 90%;
+    --sidebar-accent-foreground: 213 75% 14%;
+    --sidebar-border: 210 20% 90%;
+    --sidebar-ring: 214 70% 59%;
+
+    /* Gradient spectrum - blue to teal */
+    --ig-purple: 214 70% 59%;
+    --ig-pink: 195 65% 55%;
+    --ig-coral: 180 60% 55%;
+    --ig-orange: 166 72% 72%;
+    --ig-yellow: 166 72% 82%;
+    --ig-magenta: 213 75% 25%;
+
+    --font-display: 'DM Serif Display', serif;
+    --font-body: 'DM Sans', sans-serif;
+  }
+
+  .dark {
+    --background: 213 75% 6%;
+    --foreground: 210 80% 95%;
+    --card: 213 60% 12%;
+    --card-foreground: 210 80% 95%;
+    --popover: 213 75% 6%;
+    --popover-foreground: 210 80% 95%;
+    --primary: 214 70% 59%;
+    --primary-foreground: 213 75% 6%;
+    --secondary: 213 50% 18%;
+    --secondary-foreground: 210 50% 85%;
+    --muted: 166 40% 25%;
+    --muted-foreground: 210 20% 60%;
+    --accent: 166 40% 20%;
+    --accent-foreground: 166 30% 85%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 213 30% 20%;
+    --input: 213 30% 20%;
+    --ring: 214 70% 59%;
+    --sidebar-background: 213 60% 10%;
+    --sidebar-foreground: 210 50% 90%;
+    --sidebar-primary: 214 70% 59%;
+    --sidebar-primary-foreground: 213 75% 6%;
+    --sidebar-accent: 166 30% 18%;
+    --sidebar-accent-foreground: 166 20% 88%;
+    --sidebar-border: 213 30% 18%;
+    --sidebar-ring: 214 70% 59%;
+
+    --ig-purple: 214 70% 59%;
+    --ig-pink: 195 55% 50%;
+    --ig-coral: 180 50% 50%;
+    --ig-orange: 166 60% 60%;
+    --ig-yellow: 166 50% 70%;
+    --ig-magenta: 213 60% 35%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-family: var(--font-body);
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-display);
+  }
+}
+
+@layer components {
+  .section-padding {
+    @apply px-6 md:px-12 lg:px-24 py-20 md:py-28 lg:py-36;
+  }
+
+  .section-heading {
+    font-family: var(--font-display);
+    @apply text-3xl md:text-4xl lg:text-5xl text-foreground leading-tight;
+  }
+
+  /* Section label — small uppercase category text */
+  .section-label {
+    font-family: var(--font-body);
+    @apply text-xs tracking-[0.2em] uppercase text-primary font-medium mb-5;
+  }
+
+  /* Standard gap: heading to subheading */
+  .gap-heading-sub {
+    @apply mb-4 md:mb-5;
+  }
+
+  /* Standard gap: subheading to body */
+  .gap-sub-body {
+    @apply mb-3 md:mb-4;
+  }
+
+  /* Standard gap: heading block to content */
+  .gap-heading-content {
+    @apply mb-12 md:mb-16;
+  }
+
+  /* Editorial emphasis utilities */
+  .text-emphasis {
+    @apply text-primary font-bold;
+  }
+
+  .text-emphasis-italic {
+    font-family: var(--font-display);
+    @apply italic text-primary;
+  }
+
+  .text-editorial-light {
+    font-family: var(--font-body);
+    @apply font-light;
+  }
+
+  .text-editorial-upper {
+    font-family: var(--font-body);
+    @apply uppercase tracking-[0.08em] font-semibold;
+  }
+
+  .body-text {
+    font-family: var(--font-body);
+    @apply text-base md:text-lg text-muted-foreground leading-relaxed;
+  }
+
+  .ig-gradient-text {
+    background: linear-gradient(
+      135deg,
+      hsl(var(--ig-purple)),
+      hsl(var(--ig-pink)),
+      hsl(var(--ig-coral)),
+      hsl(var(--ig-orange))
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+}
