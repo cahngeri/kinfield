@@ -25,7 +25,6 @@ const InsightDetail = () => {
     "@type": "BlogPosting",
     headline: article.title,
     description: article.excerpt,
-    datePublished: "2026-03-01",
     author: {
       "@type": "Organization",
       name: "KINFIELD",
@@ -66,58 +65,31 @@ const InsightDetail = () => {
               <span className="font-body text-xs text-muted-foreground/60">
                 {article.date}
               </span>
-              <span className="font-body text-xs text-muted-foreground/60">
-                {article.readTime}
-              </span>
             </div>
             <h1 className="font-body text-[2rem] md:text-[2.75rem] text-foreground leading-[1.15] tracking-[-0.02em] font-light mb-6">
               {article.title}
             </h1>
-            <p className="font-body text-lg text-muted-foreground leading-relaxed mb-12 border-l-2 border-primary pl-5">
+            <p className="font-body text-lg text-muted-foreground leading-relaxed border-l-2 border-primary pl-5">
               {article.excerpt}
             </p>
           </motion.div>
+        </article>
 
-          <div className="space-y-6">
-            {article.body.map((paragraph, i) => (
-              <motion.p
-                key={i}
-                {...fadeIn(i * 0.05)}
-                className="font-body text-base text-muted-foreground leading-[1.8]"
-              >
-                {paragraph}
-              </motion.p>
-            ))}
-          </div>
-
-          <motion.div {...fadeIn(0.2)} className="mt-14 bg-card p-8 rounded-xl">
-            <h2 className="font-display text-xl text-foreground mb-5">
-              Key Takeaways
-            </h2>
-            <ul className="space-y-4">
-              {article.takeaways.map((item, i) => (
-                <li key={i} className="flex items-start gap-3">
-                  <span className="w-1.5 h-1.5 rounded-full bg-primary mt-2.5 shrink-0" />
-                  <p className="font-body text-sm text-muted-foreground leading-relaxed">
-                    {item}
-                  </p>
-                </li>
-              ))}
-            </ul>
-          </motion.div>
-
-          <motion.div {...fadeIn(0.2)} className="mt-16 text-center">
-            <h2 className="font-display text-2xl text-foreground mb-4">
-              Want insights like this for your brand?
-            </h2>
-            <Link
-              to="/contact"
-              className="inline-block bg-primary text-primary-foreground font-body font-medium px-8 py-4 rounded-lg hover:opacity-90 transition-opacity text-sm uppercase tracking-wider"
+        {/* Section: CTA */}
+        <section className="section-padding">
+          <div className="max-w-2xl mx-auto text-center">
+            <motion.h2 {...fadeIn(0)} className="section-heading mb-6">
+              Let's build impactful brands together.
+            </motion.h2>
+            <motion.a
+              href="mailto:hello@kinfield.agency"
+              {...fadeIn(0.2)}
+              className="inline-block bg-primary text-primary-foreground font-body font-medium px-10 py-4 rounded-lg hover:opacity-90 transition-opacity text-base"
             >
               Start a conversation
-            </Link>
-          </motion.div>
-        </article>
+            </motion.a>
+          </div>
+        </section>
       </main>
       <SiteFooter />
     </>
