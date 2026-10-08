@@ -27,11 +27,12 @@ npm test           # vitest
 
 ## Deploy
 
-Dikonfigurasi untuk **Cloudflare Pages**:
+Dikonfigurasi untuk **Cloudflare Workers** (Workers Builds, auto-deploy tiap push ke `master`):
 
 - Build command: `npm run build`
-- Output directory: `dist`
-- `public/_redirects` menyediakan SPA fallback agar deep link (mis. `/about`) tidak 404.
+- Deploy command: `npx wrangler deploy`
+- `wrangler.jsonc` mengatur static assets dari `dist/` + SPA fallback (`not_found_handling: single-page-application`) agar deep link (mis. `/about`) tidak 404.
+- Prerender (Chromium) otomatis dilewati di CI karena library X11 tidak tersedia; build lokal tetap memakai prerender. Override: env `PRERENDER=1` / `PRERENDER=0`.
 
 ## Struktur
 
