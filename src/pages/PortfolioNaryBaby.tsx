@@ -6,6 +6,7 @@ import socialImage from "@/assets/nary-social.jpg";
 import kolImage from "@/assets/nary-kol.jpg";
 import productImage from "@/assets/nary-product.jpg";
 import lifestyleImage from "@/assets/nary-lifestyle.jpg";
+import Seo from "@/components/Seo";
 
 const fadeIn = (delay = 0) => ({
   initial: { opacity: 0, y: 24 },
@@ -17,6 +18,12 @@ const fadeIn = (delay = 0) => ({
 const PortfolioNaryBaby = () => {
   return (
     <main className="bg-background text-foreground">
+      <Seo
+        title="Nary Babywear Case Study — Brand & KOL Activation | KINFIELD"
+        description="How KINFIELD repositioned Nary Babywear with lifestyle storytelling and KOL activation — +3,200 followers and 2.5x quarterly growth."
+        path="/portfolio/nary-babywear"
+        type="article"
+      />
       {/* Back nav */}
       <div className="fixed top-6 left-6 z-50">
         <Link

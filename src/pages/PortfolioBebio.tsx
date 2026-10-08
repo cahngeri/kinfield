@@ -4,6 +4,7 @@ import { ArrowLeft } from "lucide-react";
 import heroImage from "@/assets/bebio-hero.jpg";
 import executionImage from "@/assets/bebio-execution.jpg";
 import case1 from "@/assets/case-1.jpg";
+import Seo from "@/components/Seo";
 
 const fadeIn = (delay = 0) => ({
   initial: { opacity: 0, y: 24 },
@@ -15,6 +16,12 @@ const fadeIn = (delay = 0) => ({
 const PortfolioBebio = () => {
   return (
     <main className="bg-background text-foreground">
+      <Seo
+        title="Bebio Case Study — Telon Skincare Campaign | KINFIELD"
+        description="How the #TelonSkincareBebio campaign transformed telon oil into a daily baby skincare ritual — 3x organic engagement growth."
+        path="/portfolio/bebio"
+        type="article"
+      />
       {/* Back nav */}
       <div className="fixed top-6 left-6 z-50">
         <Link

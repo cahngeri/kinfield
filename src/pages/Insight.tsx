@@ -1,6 +1,9 @@
 import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
 import SiteHeader from "@/components/SiteHeader";
 import SiteFooter from "@/components/SiteFooter";
+import Seo from "@/components/Seo";
+import { insights } from "@/data/insights";
 
 const fadeIn = (delay = 0) => ({
   initial: { opacity: 0, y: 24 },
@@ -9,36 +12,14 @@ const fadeIn = (delay = 0) => ({
   transition: { duration: 0.7, delay },
 });
 
-const insights = [
-  {
-    title: "Why 85% of Parents Read Reviews Before Buying",
-    category: "Parent Behavior",
-    excerpt: "Understanding the trust-driven decision-making process that defines how parents choose products for their children.",
-    date: "March 2026",
-  },
-  {
-    title: "Community Seeding: The Most Underused Strategy in Baby Brands",
-    category: "Strategy",
-    excerpt: "How peer-to-peer influence among parents outperforms traditional advertising by creating authentic brand advocates.",
-    date: "February 2026",
-  },
-  {
-    title: "Phase-Based Marketing: Meeting Parents Where They Are",
-    category: "Framework",
-    excerpt: "From expecting to toddler years — why timing your message to the parent lifecycle changes everything.",
-    date: "January 2026",
-  },
-  {
-    title: "The Reassurance Economy: Marketing Beyond Persuasion",
-    category: "Insight",
-    excerpt: "Parents don't want to be sold to. They want to be reassured. How this shift transforms brand strategy.",
-    date: "December 2025",
-  },
-];
-
 const Insight = () => {
   return (
     <>
+      <Seo
+        title="Insights — KINFIELD"
+        description="Strategic perspectives on parent marketing, community building, and brand trust from the KINFIELD team."
+        path="/insight"
+      />
       <SiteHeader />
       <main className="pt-20 md:pt-24">
         {/* Hero */}
@@ -62,25 +43,27 @@ const Insight = () => {
         <section className="px-6 md:px-12 lg:px-24 pb-24 md:pb-32 lg:pb-40">
           <div className="max-w-4xl mx-auto divide-y divide-border">
             {insights.map((article, i) => (
-              <motion.article
-                key={article.title}
-                {...fadeIn(i * 0.1)}
-                className="py-8 md:py-10 group cursor-pointer"
-              >
-                <div className="flex items-center gap-4 mb-3">
-                  <span className="font-body text-xs tracking-[0.1em] uppercase text-primary font-medium">
-                    {article.category}
-                  </span>
-                  <span className="font-body text-xs text-muted-foreground/60">
-                    {article.date}
-                  </span>
-                </div>
-                <h3 className="font-display text-xl md:text-2xl text-foreground mb-2 group-hover:text-primary transition-colors">
-                  {article.title}
-                </h3>
-                <p className="font-body text-sm text-muted-foreground leading-relaxed max-w-2xl">
-                  {article.excerpt}
-                </p>
+              <motion.article key={article.slug} {...fadeIn(i * 0.1)} className="py-8 md:py-10">
+                <Link
+                  to={`/insight/${article.slug}`}
+                  className="group block"
+                  aria-label={`Read article: ${article.title}`}
+                >
+                  <div className="flex items-center gap-4 mb-3">
+                    <span className="font-body text-xs tracking-[0.1em] uppercase text-primary font-medium">
+                      {article.category}
+                    </span>
+                    <span className="font-body text-xs text-muted-foreground/60">
+                      {article.date}
+                    </span>
+                  </div>
+                  <h3 className="font-display text-xl md:text-2xl text-foreground mb-2 group-hover:text-primary transition-colors">
+                    {article.title}
+                  </h3>
+                  <p className="font-body text-sm text-muted-foreground leading-relaxed max-w-2xl">
+                    {article.excerpt}
+                  </p>
+                </Link>
               </motion.article>
             ))}
           </div>

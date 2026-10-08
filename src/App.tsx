@@ -10,6 +10,7 @@ import PortfolioNaryBaby from "./pages/PortfolioNaryBaby";
 import WinningProject from "./pages/WinningProject";
 import AboutUs from "./pages/AboutUs";
 import Insight from "./pages/Insight";
+import InsightDetail from "./pages/InsightDetail";
 import ContactUs from "./pages/ContactUs";
 
 const queryClient = new QueryClient();
@@ -25,6 +26,7 @@ const App = () => (
           <Route path="/winning-project" element={<WinningProject />} />
           <Route path="/about" element={<AboutUs />} />
           <Route path="/insight" element={<Insight />} />
+          <Route path="/insight/:slug" element={<InsightDetail />} />
           <Route path="/contact" element={<ContactUs />} />
           <Route path="/portfolio/bebio" element={<PortfolioBebio />} />
           <Route path="/portfolio/nary-babywear" element={<PortfolioNaryBaby />} />

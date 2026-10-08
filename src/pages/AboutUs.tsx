@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import SiteHeader from "@/components/SiteHeader";
 import SiteFooter from "@/components/SiteFooter";
+import Seo from "@/components/Seo";
 
 const fadeIn = (delay = 0) => ({
   initial: { opacity: 0, y: 24 },
@@ -12,6 +13,11 @@ const fadeIn = (delay = 0) => ({
 const AboutUs = () => {
   return (
     <>
+      <Seo
+        title="About Us — KINFIELD"
+        description="KINFIELD is a creative marketing agency built for baby & kids brands that take parents seriously. Empathy first, trust over tactics."
+        path="/about"
+      />
       <SiteHeader />
       <main className="pt-20 md:pt-24">
         {/* Hero */}

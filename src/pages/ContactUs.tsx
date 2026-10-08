@@ -2,6 +2,7 @@ import { useState } from "react";
 import { motion } from "framer-motion";
 import SiteHeader from "@/components/SiteHeader";
 import SiteFooter from "@/components/SiteFooter";
+import Seo from "@/components/Seo";
 
 const fadeIn = (delay = 0) => ({
   initial: { opacity: 0, y: 24 },
@@ -21,6 +22,11 @@ const ContactUs = () => {
 
   return (
     <>
+      <Seo
+        title="Contact Us — KINFIELD"
+        description="Ready to connect with parents in a meaningful way? Talk to KINFIELD about your baby & kids brand."
+        path="/contact"
+      />
       <SiteHeader />
       <main className="pt-20 md:pt-24">
         <section className="px-6 md:px-12 lg:px-24 py-20 md:py-28 lg:py-36">

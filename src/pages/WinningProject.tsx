@@ -2,6 +2,7 @@ import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 import SiteHeader from "@/components/SiteHeader";
 import SiteFooter from "@/components/SiteFooter";
+import Seo from "@/components/Seo";
 import case1 from "@/assets/case-1.jpg";
 import case2 from "@/assets/case-2.jpg";
 
@@ -34,6 +35,11 @@ const projects = [
 const WinningProject = () => {
   return (
     <>
+      <Seo
+        title="Winning Projects — KINFIELD"
+        description="Selected projects where deep parent understanding turned into trust, engagement, and long-term brand belief for baby & kids brands."
+        path="/winning-project"
+      />
       <SiteHeader />
       <main className="pt-20 md:pt-24">
         {/* Hero */}

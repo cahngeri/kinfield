@@ -9,10 +9,12 @@ import ServicesSection from "@/components/ServicesSection";
 import TeamSection from "@/components/TeamSection";
 import FinalCtaSection from "@/components/FinalCtaSection";
 import SiteFooter from "@/components/SiteFooter";
+import Seo from "@/components/Seo";
 
 const Index = () => {
   return (
     <main>
+      <Seo path="/" />
       <SiteHeader />
       <HeroSection />
       <CredentialsSection />
