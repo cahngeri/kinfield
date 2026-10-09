@@ -5,6 +5,7 @@ import heroImage from "@/assets/bebio-hero.jpg";
 import executionImage from "@/assets/bebio-execution.jpg";
 import case1 from "@/assets/case-1.jpg";
 import Seo from "@/components/Seo";
+import { buildBreadcrumbSchema, buildCaseStudySchema } from "@/lib/schema";
 
 const fadeIn = (delay = 0) => ({
   initial: { opacity: 0, y: 24 },
@@ -14,6 +15,26 @@ const fadeIn = (delay = 0) => ({
 });
 
 const PortfolioBebio = () => {
+  const jsonLd = [
+    buildCaseStudySchema({
+      slug: "bebio",
+      name: "Bebio Case Study — Telon Skincare Campaign",
+      description:
+        "How the #TelonSkincareBebio campaign transformed telon oil into a daily baby skincare ritual — 3x organic engagement growth.",
+      clientName: "Bebio",
+      results: [
+        "3x organic engagement growth",
+        "85% positive sentiment from UGC",
+        "Telon Skincare category creation",
+      ],
+    }),
+    buildBreadcrumbSchema([
+      { name: "Home", path: "/" },
+      { name: "Winning Projects", path: "/winning-project" },
+      { name: "Bebio", path: "/portfolio/bebio" },
+    ]),
+  ];
+
   return (
     <main className="bg-background text-foreground">
       <Seo
@@ -21,6 +42,7 @@ const PortfolioBebio = () => {
         description="How the #TelonSkincareBebio campaign transformed telon oil into a daily baby skincare ritual — 3x organic engagement growth."
         path="/portfolio/bebio"
         type="article"
+        jsonLd={jsonLd}
       />
       {/* Back nav */}
       <div className="fixed top-6 left-6 z-50">

@@ -7,6 +7,7 @@ import kolImage from "@/assets/nary-kol.jpg";
 import productImage from "@/assets/nary-product.jpg";
 import lifestyleImage from "@/assets/nary-lifestyle.jpg";
 import Seo from "@/components/Seo";
+import { buildBreadcrumbSchema, buildCaseStudySchema } from "@/lib/schema";
 
 const fadeIn = (delay = 0) => ({
   initial: { opacity: 0, y: 24 },
@@ -16,6 +17,27 @@ const fadeIn = (delay = 0) => ({
 });
 
 const PortfolioNaryBaby = () => {
+  const jsonLd = [
+    buildCaseStudySchema({
+      slug: "nary-babywear",
+      name: "Nary Babywear Case Study — Brand & KOL Activation",
+      description:
+        "How KINFIELD repositioned Nary Babywear with lifestyle storytelling and KOL activation (@monaratuliu) — +3,200 followers and 2.5x quarterly growth.",
+      clientName: "Nary Babywear",
+      results: [
+        "+3,200 followers gained in 30 days",
+        "+200 campaign participants",
+        "2.5x quarterly follower growth",
+        "90% positive brand sentiment",
+      ],
+    }),
+    buildBreadcrumbSchema([
+      { name: "Home", path: "/" },
+      { name: "Winning Projects", path: "/winning-project" },
+      { name: "Nary Babywear", path: "/portfolio/nary-babywear" },
+    ]),
+  ];
+
   return (
     <main className="bg-background text-foreground">
       <Seo
@@ -23,6 +45,7 @@ const PortfolioNaryBaby = () => {
         description="How KINFIELD repositioned Nary Babywear with lifestyle storytelling and KOL activation — +3,200 followers and 2.5x quarterly growth."
         path="/portfolio/nary-babywear"
         type="article"
+        jsonLd={jsonLd}
       />
       {/* Back nav */}
       <div className="fixed top-6 left-6 z-50">

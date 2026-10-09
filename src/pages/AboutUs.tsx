@@ -3,6 +3,15 @@ import SiteHeader from "@/components/SiteHeader";
 import SiteFooter from "@/components/SiteFooter";
 import Seo from "@/components/Seo";
 
+import {
+  SITE_URL,
+  WEBSITE_ID,
+  ORGANIZATION_ID,
+  buildBreadcrumbSchema,
+  buildOrganizationSchema,
+  buildTeamSchemas,
+} from "@/lib/schema";
+
 const fadeIn = (delay = 0) => ({
   initial: { opacity: 0, y: 24 },
   whileInView: { opacity: 1, y: 0 },
@@ -11,12 +20,32 @@ const fadeIn = (delay = 0) => ({
 });
 
 const AboutUs = () => {
+  const jsonLd = [
+    {
+      "@type": "AboutPage",
+      "@id": `${SITE_URL}/about#webpage`,
+      url: `${SITE_URL}/about`,
+      name: "About Us — KINFIELD",
+      description:
+        "KINFIELD is a creative marketing agency built for baby & kids brands that take parents seriously. Empathy first, trust over tactics.",
+      isPartOf: { "@id": WEBSITE_ID },
+      about: { "@id": ORGANIZATION_ID },
+    },
+    buildBreadcrumbSchema([
+      { name: "Home", path: "/" },
+      { name: "About Us", path: "/about" },
+    ]),
+    buildOrganizationSchema(),
+    ...buildTeamSchemas(),
+  ];
+
   return (
     <>
       <Seo
         title="About Us — KINFIELD"
         description="KINFIELD is a creative marketing agency built for baby & kids brands that take parents seriously. Empathy first, trust over tactics."
         path="/about"
+        jsonLd={jsonLd}
       />
       <SiteHeader />
       <main className="pt-20 md:pt-24">

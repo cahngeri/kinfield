@@ -1,6 +1,6 @@
 import { useEffect } from "react";
 
-const SITE_URL = "https://kinfield.agency";
+const SITE_URL = "https://kinfield.id";
 const DEFAULT_TITLE = "KINFIELD — Creative Marketing Agency for Baby & Kids Brands";
 const DEFAULT_DESCRIPTION =
   "KINFIELD is a creative marketing agency for baby & kids brands that want to win parents at every phase of their journey.";
@@ -15,7 +15,7 @@ export interface SeoProps {
   image?: string;
   type?: string;
   noindex?: boolean;
-  jsonLd?: object;
+  jsonLd?: Record<string, unknown> | Array<Record<string, unknown>>;
 }
 
 const upsertMeta = (attribute: "name" | "property", key: string, content: string) => {
@@ -77,7 +77,12 @@ const Seo = ({
       const script = document.createElement("script");
       script.id = "seo-jsonld";
       script.type = "application/ld+json";
-      script.textContent = JSON.stringify(jsonLd);
+      
+      const payload = Array.isArray(jsonLd)
+        ? { "@context": "https://schema.org", "@graph": jsonLd }
+        : ("@context" in jsonLd ? jsonLd : { "@context": "https://schema.org", ...jsonLd });
+
+      script.textContent = JSON.stringify(payload);
       document.head.appendChild(script);
     }
     return () => {

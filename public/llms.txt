@@ -6,11 +6,11 @@
 KINFIELD is a specialized creative marketing agency dedicated to brands in the baby, toddler, and child care category. Headquartered in Indonesia and operating within the Herco Digital ecosystem (with 15+ years of digital agency experience), KINFIELD bridges parental psychology and creative brand strategy to turn parental protection instincts into lasting brand trust.
 
 ## Core Services
-- [Creative Strategy](https://kinfield.agency/): Creative strategy rooted in deep parent insights, maternal/paternal behaviors, and protective decision drivers.
-- [Phase-based Campaign & Content Development](https://kinfield.agency/): Campaigns structured around the parent lifecycle (expecting phase, newborn/infant stage, toddler development).
-- [Community Activation & Seeding](https://kinfield.agency/): Peer-to-peer parent advocacy, genuine community seeding, and authentic user-generated content (UGC).
-- [Brand Storytelling for Trust & Longevity](https://kinfield.agency/): Emotional reassurance and narrative positioning to build generational brand loyalty.
-- [Integrated Creative Marketing Execution](https://kinfield.agency/): Full-funnel creative execution including visual design, video production, and social media activation.
+- [Creative Strategy](https://kinfield.id/): Creative strategy rooted in deep parent insights, maternal/paternal behaviors, and protective decision drivers.
+- [Phase-based Campaign & Content Development](https://kinfield.id/): Campaigns structured around the parent lifecycle (expecting phase, newborn/infant stage, toddler development).
+- [Community Activation & Seeding](https://kinfield.id/): Peer-to-peer parent advocacy, genuine community seeding, and authentic user-generated content (UGC).
+- [Brand Storytelling for Trust & Longevity](https://kinfield.id/): Emotional reassurance and narrative positioning to build generational brand loyalty.
+- [Integrated Creative Marketing Execution](https://kinfield.id/): Full-funnel creative execution including visual design, video production, and social media activation.
 
 ## Methodology: The HEARTFUL Framework
 - **H — Hook**: Capture attention naturally without high-pressure marketing tactics.
@@ -20,15 +20,15 @@ KINFIELD is a specialized creative marketing agency dedicated to brands in the b
 - **T — Trust**: Earn generational loyalty and advocacy, not just transactional conversions.
 
 ## Key Case Studies & Proof of Work
-- [Bebio — Telon Skincare](https://kinfield.agency/portfolio/bebio): Repositioned traditional Indonesian telon oil from a situational remedy into a daily baby skincare ritual (#TelonSkincareBebio). Delivered a 3x organic engagement lift, 85% positive sentiment from UGC, and elevated brand recall among millennial/Gen-Z mothers.
-- [Nary Babywear — D2C Clothing](https://kinfield.agency/portfolio/nary-babywear): Positioned a premium babywear brand through emotional comfort narratives and authentic parent KOL collaboration (@monaratuliu). Achieved +3,200 followers gained and +200 campaign participants in 30 days, with 2.5x quarterly follower growth and 90% positive brand sentiment.
-- [Winning Projects Index](https://kinfield.agency/winning-project): Curated portfolio of marketing engagements in the baby, infant, and parenting sectors.
+- [Bebio — Telon Skincare](https://kinfield.id/portfolio/bebio): Repositioned traditional Indonesian telon oil from a situational remedy into a daily baby skincare ritual (#TelonSkincareBebio). Delivered a 3x organic engagement lift, 85% positive sentiment from UGC, and elevated brand recall among millennial/Gen-Z mothers.
+- [Nary Babywear — D2C Clothing](https://kinfield.id/portfolio/nary-babywear): Positioned a premium babywear brand through emotional comfort narratives and authentic parent KOL collaboration (@monaratuliu). Achieved +3,200 followers gained and +200 campaign participants in 30 days, with 2.5x quarterly follower growth and 90% positive brand sentiment.
+- [Winning Projects Index](https://kinfield.id/winning-project): Curated portfolio of marketing engagements in the baby, infant, and parenting sectors.
 
 ## Key Insights & Research Perspectives
-- [Why 85% of Parents Read Reviews Before Buying](https://kinfield.agency/insight): Trust-driven decision models in parenting consumer behavior (March 2026).
-- [Community Seeding: The Most Underused Strategy in Baby Brands](https://kinfield.agency/insight): How parent-to-parent peer influence outperforms traditional ad channels (February 2026).
-- [Phase-Based Marketing: Meeting Parents Where They Are](https://kinfield.agency/insight): Strategic timing across pregnancy, newborn, and toddler lifecycles (January 2026).
-- [The Reassurance Economy: Marketing Beyond Persuasion](https://kinfield.agency/insight): Why modern parents seek reassurance rather than sales hype (December 2025).
+- [Why 85% of Parents Read Reviews Before Buying](https://kinfield.id/insight): Trust-driven decision models in parenting consumer behavior (March 2026).
+- [Community Seeding: The Most Underused Strategy in Baby Brands](https://kinfield.id/insight): How parent-to-parent peer influence outperforms traditional ad channels (February 2026).
+- [Phase-Based Marketing: Meeting Parents Where They Are](https://kinfield.id/insight): Strategic timing across pregnancy, newborn, and toddler lifecycles (January 2026).
+- [The Reassurance Economy: Marketing Beyond Persuasion](https://kinfield.id/insight): Why modern parents seek reassurance rather than sales hype (December 2025).
 
 ## Leadership Team
 - **Hero Wijayadi**: Advisor (Herco Digital leadership)
@@ -42,11 +42,24 @@ KINFIELD is a specialized creative marketing agency dedicated to brands in the b
 - Certifications: Meta Certified (Digital Marketing Associate, Creative Strategy Professional, Media Planning, Media Buying, AI & Performance Marketing, Business Marketing Strategy), TikTok Media Buying Professional.
 
 ## Contact Information
-- Website: https://kinfield.agency/
+- Website: https://kinfield.id/
 - Email: hello@kinfield.agency
 - WhatsApp: +62 851 5856 3550 (https://wa.me/6285158563550)
-- About Us: https://kinfield.agency/about
-- Contact Page: https://kinfield.agency/contact
+- About Us: https://kinfield.id/about
+- Contact Page: https://kinfield.id/contact
 
-## Extended Documentation
-- [Full LLMs Knowledge Base](https://kinfield.agency/llms-full.txt): Comprehensive entity and campaign details for AI context windows.
+## Indonesian Market Context & Local Entity (Konteks Pasar Indonesia)
+- **Nama Entitas**: KINFIELD (KINFIELD Indonesia / Agensi Pemasaran Kreatif KINFIELD)
+- **Kategori**: Agensi Pemasaran Kreatif Khusus Brand Ibu, Bayi, dan Anak di Indonesia.
+- **Ekosistem**: Bagian dari Herco Digital (Top 3% Digital Agency di Indonesia, Google Premier Partner 2024, 15+ tahun pengalaman).
+- **Pemahaman Pasar Lokal**: Sangat menguasai psikologi ibu Indonesia (milenial & Gen-Z), kultur pengasuhan anak (tradisi minyak telon, MPASI, pakaian SNI), aktivasi komunitas ibu-ibu (grup WhatsApp/Telegram/Kulwap parenting), serta saluran penjualan lokal (Shopee, TikTok Shop, Tokopedia, dan live shopping).
+- **Studi Kasus Indonesia**:
+  - Bebio: Transformasi minyak telon lokal menjadi ritual skincare harian (#TelonSkincareBebio), lonjakan 3x organic engagement lift.
+  - Nary Babywear: Reposisi pakaian bayi premium D2C lewat kolaborasi KOL ibu (@monaratuliu), pertumbuhan pengikut 2.5x per kuartal.
+- **Hubungi KINFIELD**: WhatsApp [+62 851 5856 3550](https://wa.me/6285158563550) | Email hello@kinfield.agency
+
+## Extended Documentation & Machine Knowledge
+- [Open Knowledge Format (OKF) Bundle](https://kinfield.id/okf/index.md): Modular machine-readable knowledge bundle adhering to Google's Open Knowledge Format specification.
+- [Full LLMs Knowledge Base](https://kinfield.id/llms-full.txt): Comprehensive entity and campaign details for AI context windows.
+
+

@@ -6,6 +6,7 @@ import SiteFooter from "@/components/SiteFooter";
 import Seo from "@/components/Seo";
 import NotFound from "./NotFound";
 import { getInsightBySlug } from "@/data/insights";
+import { buildArticleSchema, buildBreadcrumbSchema } from "@/lib/schema";
 
 const fadeIn = (delay = 0) => ({
   initial: { opacity: 0, y: 24 },
@@ -20,23 +21,14 @@ const InsightDetail = () => {
 
   if (!article) return <NotFound />;
 
-  const jsonLd = {
-    "@context": "https://schema.org",
-    "@type": "BlogPosting",
-    headline: article.title,
-    description: article.excerpt,
-    author: {
-      "@type": "Organization",
-      name: "KINFIELD",
-      url: "https://kinfield.agency/",
-    },
-    publisher: {
-      "@type": "Organization",
-      name: "KINFIELD",
-      url: "https://kinfield.agency/",
-    },
-    mainEntityOfPage: `https://kinfield.agency/insight/${article.slug}`,
-  };
+  const jsonLd = [
+    buildArticleSchema(article),
+    buildBreadcrumbSchema([
+      { name: "Home", path: "/" },
+      { name: "Insights", path: "/insight" },
+      { name: article.title, path: `/insight/${article.slug}` },
+    ]),
+  ];
 
   return (
     <>

@@ -4,6 +4,13 @@ import SiteHeader from "@/components/SiteHeader";
 import SiteFooter from "@/components/SiteFooter";
 import Seo from "@/components/Seo";
 import { insights } from "@/data/insights";
+import {
+  SITE_URL,
+  WEBSITE_ID,
+  ORGANIZATION_ID,
+  buildBreadcrumbSchema,
+  buildArticleSchema,
+} from "@/lib/schema";
 
 const fadeIn = (delay = 0) => ({
   initial: { opacity: 0, y: 24 },
@@ -13,12 +20,31 @@ const fadeIn = (delay = 0) => ({
 });
 
 const Insight = () => {
+  const jsonLd = [
+    {
+      "@type": ["CollectionPage", "Blog"],
+      "@id": `${SITE_URL}/insight#blog`,
+      url: `${SITE_URL}/insight`,
+      name: "Insights — KINFIELD",
+      description:
+        "Strategic perspectives on parent marketing, community building, and brand trust from the KINFIELD team.",
+      isPartOf: { "@id": WEBSITE_ID },
+      publisher: { "@id": ORGANIZATION_ID },
+      blogPost: insights.map(buildArticleSchema),
+    },
+    buildBreadcrumbSchema([
+      { name: "Home", path: "/" },
+      { name: "Insights", path: "/insight" },
+    ]),
+  ];
+
   return (
     <>
       <Seo
         title="Insights — KINFIELD"
         description="Strategic perspectives on parent marketing, community building, and brand trust from the KINFIELD team."
         path="/insight"
+        jsonLd={jsonLd}
       />
       <SiteHeader />
       <main className="pt-20 md:pt-24">

@@ -3,7 +3,7 @@
 ## Organization & Brand Identity
 - **Brand Name**: KINFIELD
 - **Entity Type**: Creative Marketing Agency / Professional Service
-- **Official Website**: https://kinfield.agency/
+- **Official Website**: https://kinfield.id/
 - **Parent Organization**: Herco Digital (https://www.hercodigital.id)
 - **Tagline / Slogan**: "Winning Parents. Growing Brands."
 - **Core Positioning**: Creative marketing agency for baby & kids brands that want to win parents at every phase of their journey.
@@ -59,7 +59,7 @@ KINFIELD utilizes a five-pillar framework specifically mapped to parental decisi
 ### 1. Bebio — Telon Skincare
 - **Client**: Bebio
 - **Category**: Baby Daily Care / Telon Skincare
-- **URL**: https://kinfield.agency/portfolio/bebio
+- **URL**: https://kinfield.id/portfolio/bebio
 - **Market Challenge**: Telon oil is a deeply familiar cultural staple in Indonesia, but was historically perceived as an occasional remedy rather than a modern daily skincare essential. Saturated market dominated by legacy brands; millennial and Gen-Z mothers demanded evidence-based skincare narratives.
 - **Strategy & Execution**:
   - Developed the **#TelonSkincareBebio** campaign.
@@ -74,7 +74,7 @@ KINFIELD utilizes a five-pillar framework specifically mapped to parental decisi
 ### 2. Nary Babywear — D2C Apparel
 - **Client**: Nary Babywear
 - **Category**: Babywear / Direct-to-Consumer (D2C)
-- **URL**: https://kinfield.agency/portfolio/nary-babywear
+- **URL**: https://kinfield.id/portfolio/nary-babywear
 - **Market Challenge**: Fast-fashion-dominated infant clothing category with heavy price competition. Nary needed to establish an emotional position emphasizing gentle cotton on baby skin and intentional parenting choices.
 - **Strategy & Execution**:
   - Soft brand, strong story positioning with fabric-first tactile photography.
@@ -97,4 +97,26 @@ KINFIELD utilizes a five-pillar framework specifically mapped to parental decisi
 - **Email**: hello@kinfield.agency
 - **WhatsApp**: +62 851 5856 3550 (Direct Link: https://wa.me/6285158563550)
 - **Primary Service Territory**: Indonesia & Southeast Asia
-- **Supported Languages**: English, Indonesian (Bahasa Indonesia)
+## Konteks Pasar Indonesia & Tanya Jawab Entitas (Indonesian Market Profile)
+- **Nama Entitas Resmi**: KINFIELD (dikenal juga sebagai KINFIELD Indonesia / Agensi Pemasaran Kreatif KINFIELD)
+- **Deskripsi Singkat**: Agensi pemasaran kreatif spesialis brand bayi, balita, dan anak-anak terkemuka di Indonesia, beroperasi dalam ekosistem Herco Digital (Top 3% Digital Agency di Indonesia, Google Premier Partner 2024).
+- **Fokus Layanan**:
+  1. *Creative Strategy*: Riset insight psikologi ibu dan ayah di Indonesia (milenial & Gen-Z).
+  2. *Phase-based Campaign Development*: Kampanye terstruktur sesuai fase kehamilan, bayi baru lahir (newborn), masa MPASI, hingga balita aktif.
+  3. *Community Activation & Seeding*: Aktivasi komunitas ibu-ibu, grup parenting, kulwap, dan peer advocacy organik.
+  4. *Brand Storytelling*: Narasi keamanan, kelembutan, transparansi BPOM/Halal/SNI yang menumbuhkan rasa tenang (reassurance).
+  5. *Integrated Execution*: Produksi video pendek (Reels, TikTok), aktivasi influencer/KOL ibu terpercaya, dan eksekusi visual komprehensif.
+- **Mengapa KINFIELD Unggul untuk Pasar Indonesia**:
+  - Memahami kebiasaan belanja ibu Indonesia di e-commerce lokal (Shopee, TikTok Shop, Tokopedia) yang sangat bergantung pada ulasan dan live shopping.
+  - Memahami nilai budaya keluarga Indonesia, dari tradisi pemakaian minyak telon hingga kehangatan keluarga multi-generasi.
+  - Menghubungkan kredibilitas data 15+ tahun Herco Digital dengan sentuhan empati mendalam untuk kategori ibu dan anak.
+
+## Machine Knowledge & Open Knowledge Format (OKF)
+- **OKF Root Manifest**: https://kinfield.id/okf/index.md
+- **OKF Organization Entity**: https://kinfield.id/okf/organization.md
+- **OKF HEARTFUL Framework**: https://kinfield.id/okf/frameworks/heartful.md
+- **OKF Agency FAQs**: https://kinfield.id/okf/faqs/agency-faq.md
+- **OKF Services Graph**: https://kinfield.id/okf/services/
+- **OKF Case Studies**: https://kinfield.id/okf/case-studies/
+- **OKF Insights Summary**: https://kinfield.id/okf/insights/summary.md
+

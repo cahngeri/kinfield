@@ -3,6 +3,13 @@ import { motion } from "framer-motion";
 import SiteHeader from "@/components/SiteHeader";
 import SiteFooter from "@/components/SiteFooter";
 import Seo from "@/components/Seo";
+import {
+  SITE_URL,
+  WEBSITE_ID,
+  ORGANIZATION_ID,
+  buildBreadcrumbSchema,
+  buildOrganizationSchema,
+} from "@/lib/schema";
 
 const fadeIn = (delay = 0) => ({
   initial: { opacity: 0, y: 24 },
@@ -20,12 +27,38 @@ const ContactUs = () => {
     setSubmitted(true);
   };
 
+  const jsonLd = [
+    {
+      "@type": "ContactPage",
+      "@id": `${SITE_URL}/contact#webpage`,
+      url: `${SITE_URL}/contact`,
+      name: "Contact Us — KINFIELD",
+      description:
+        "Ready to connect with parents in a meaningful way? Talk to KINFIELD about your baby & kids brand.",
+      isPartOf: { "@id": WEBSITE_ID },
+      about: { "@id": ORGANIZATION_ID },
+      mainEntity: {
+        "@type": "ContactPoint",
+        contactType: "customer support",
+        email: "hello@kinfield.agency",
+        telephone: "+62-851-5856-3550",
+        availableLanguage: ["English", "Indonesian"],
+      },
+    },
+    buildBreadcrumbSchema([
+      { name: "Home", path: "/" },
+      { name: "Contact Us", path: "/contact" },
+    ]),
+    buildOrganizationSchema(),
+  ];
+
   return (
     <>
       <Seo
         title="Contact Us — KINFIELD"
         description="Ready to connect with parents in a meaningful way? Talk to KINFIELD about your baby & kids brand."
         path="/contact"
+        jsonLd={jsonLd}
       />
       <SiteHeader />
       <main className="pt-20 md:pt-24">

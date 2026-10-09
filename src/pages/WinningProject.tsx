@@ -6,6 +6,14 @@ import Seo from "@/components/Seo";
 import case1 from "@/assets/case-1.jpg";
 import case2 from "@/assets/case-2.jpg";
 
+import {
+  SITE_URL,
+  WEBSITE_ID,
+  ORGANIZATION_ID,
+  buildBreadcrumbSchema,
+  buildCaseStudySchema,
+} from "@/lib/schema";
+
 const fadeIn = (delay = 0) => ({
   initial: { opacity: 0, y: 24 },
   whileInView: { opacity: 1, y: 0 },
@@ -33,12 +41,59 @@ const projects = [
 ];
 
 const WinningProject = () => {
+  const jsonLd = [
+    {
+      "@type": "CollectionPage",
+      "@id": `${SITE_URL}/winning-project#webpage`,
+      url: `${SITE_URL}/winning-project`,
+      name: "Winning Projects — KINFIELD",
+      description:
+        "Selected projects where deep parent understanding turned into trust, engagement, and long-term brand belief for baby & kids brands.",
+      isPartOf: { "@id": WEBSITE_ID },
+      about: { "@id": ORGANIZATION_ID },
+      mainEntity: {
+        "@type": "ItemList",
+        itemListElement: [
+          {
+            "@type": "ListItem",
+            position: 1,
+            item: buildCaseStudySchema({
+              slug: "bebio",
+              name: "Bebio Case Study — Telon Skincare Campaign",
+              description:
+                "Transforming telon oil from a situational remedy into a daily baby skincare ritual via the #TelonSkincareBebio campaign, achieving 3x organic engagement growth.",
+              clientName: "Bebio",
+              results: ["3x engagement lift", "85% positive sentiment"],
+            }),
+          },
+          {
+            "@type": "ListItem",
+            position: 2,
+            item: buildCaseStudySchema({
+              slug: "nary-babywear",
+              name: "Nary Babywear Case Study — Brand & KOL Activation",
+              description:
+                "Repositioning Nary Babywear with lifestyle storytelling and KOL activation (@monaratuliu), generating +3,200 followers and 2.5x quarterly growth.",
+              clientName: "Nary Babywear",
+              results: ["+3,200 followers", "2.5x quarterly growth", "90% positive sentiment"],
+            }),
+          },
+        ],
+      },
+    },
+    buildBreadcrumbSchema([
+      { name: "Home", path: "/" },
+      { name: "Winning Projects", path: "/winning-project" },
+    ]),
+  ];
+
   return (
     <>
       <Seo
         title="Winning Projects — KINFIELD"
         description="Selected projects where deep parent understanding turned into trust, engagement, and long-term brand belief for baby & kids brands."
         path="/winning-project"
+        jsonLd={jsonLd}
       />
       <SiteHeader />
       <main className="pt-20 md:pt-24">
